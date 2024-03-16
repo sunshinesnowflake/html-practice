@@ -4,40 +4,67 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
+
     <title>Youtube sponge bob</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    
-    <div class="flex-container">
-      <div class="hamburgerlogo">
-        <img src="icons8-hamburger-menu-50.png" class="hamburger" />
-        <img src="logo.jpg" / class="youtubelogo">
-        <iframe class="video" src="https://www.youtube.com/watch?v=SErVrLQfXkg" frameborder="video"></iframe>
-        <h2 class="videotitle">Pearl Gets a New Job at the Mall! 👵 | "Mall Girl Pearl" Full Scene | SpongeBob</h2>
-        <h3 class="Accountname">SpongeBob SquarePants Official</h3>
-        <p class="subscriberamount">6.92M subscribers</p>
-        <div>
-          <img class="spongebobface" src="spongebobface.jpg" >
+    <nav class="flex justify-between navbar">
+      <div class="flex justify-between items-center">
+        <div class="">
+          <img src="icons8-hamburger-menu-50.png" class="hamburger" />
+        </div>
+        <div class="youtube-logo center">
+          <img src="logo.jpg" />
         </div>
       </div>
-      <div class="searchbar">
-        <input type="text" placeholder="Search" />
-        <button id="searchbutton">
-          <img src="magnifying-glass.png" class="magnifying-glass" />
+
+      <div class="flex searchbar">
+        <input class="search-input" type="text" placeholder="Search" />
+
+        <button class="search-button center">
+          <img src="magnifying-glass.png" />
         </button>
-        <div>
-          <img src="microphone-black-shape.png" class="microphone" />
+
+        <div class="microphone center">
+          <img src="microphone-black-shape.png" />
         </div>
       </div>
-      <div class="settingssignin">
-        <img src="settingslogo.jpg" class="settingslogo">
-        <button id="signin">
-          <img src="images.png" class="person">
-        <p> Sign In </p>
+
+      <div class="flex settings-signin">
+        <div class="settings-logo">
+          <img src="settingslogo.jpg" />
+        </div>
+
+        <button class="flex justify-start items-center signin-button">
+          <img src="images.png" class="person" />
+          <p>Sign In</p>
         </button>
-       
       </div>
-     </body> 
+    </nav>
+
+    <section class="video-player">
+      <div class="video">
+        <iframe
+          src="https://www.youtube.com/watch?v=SErVrLQfXkg"
+          frameborder="video"
+        ></iframe>
+      </div>
+      <div class="video-details-container">
+        <h2 class="video-title">
+          Pearl Gets a New Job at the Mall! 👵 | "Mall Girl Pearl" Full Scene |
+          SpongeBob
+        </h2>
+        <div class="flex items-align video-details justify-start">
+          <div class="account-img flex justify-center items-align">
+            <img class="spongebob-face" src="spongebobface.jpg" />
+          </div>
+          <div class="flex flex-col justify-center account-details">
+            <h3 class="Accountname">SpongeBob SquarePants Official</h3>
+            <p class="subscriberamount">6.92M subscribers</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>

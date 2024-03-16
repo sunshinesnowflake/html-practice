@@ -1,218 +1,253 @@
-.flex-container {
-display: flex;
-justify-content: space-between;
-max-width: 1430px;
-
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
-.hamburger{
-   position: absolute;
-   width: 20px;
-   height: 25px;
-   margin-left: 20px;
-   margin-top: 20px;
-   cursor: pointer;
-   }
-.youtubelogo{
-    position: absolute;
-    width: 80px;
-    margin-left: 65px;
-    margin-top: 7px;
-    cursor: pointer;
-
+body {
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
-input {
-    position: absolute;
-    width: 580px;
-    height: 15px;
-    margin-left:-200px;
-    margin-top: 10px;
-    border-radius: px;
-    padding: 15px;
-    border-radius: 30px;
-    font-size: medium;
-    border-color: lightgrey;
-    border-width: 0.5px;
+.navbar {
+  height: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
-
-.magnifying-glass{
-    position: absolute;
-    width: 30px;
-    margin-top: -15px;
-    margin-left: -18px;
-    cursor: pointer;
-    
-}
-#searchbutton{
-    position: absolute;
-    width: 70px;
-    height: 47px;
-    margin-left:341px;
-    margin-top: 10px;
-    border-top-right-radius: 30px;
-    border-bottom-right-radius: 30px;
-    background-color:#F2F2F2;
-    border-width: 0.01px;
-    border-color: lightgrey;
-    cursor: pointer;
-}
-.microphone{
-    position: absolute;
-    width: 30px;
-    margin-top:-40px;
-    margin-left:660px;
-    cursor: pointer;
-    
+.hamburger {
+  width: 20px;
+  height: 25px;
 }
 
-.settingslogo{
-    position: absloute;
-    width: 30px;
-    height: 30px;
-    margin-right: 70px;
-    margin-top: 13px;
-    cursor: pointer;
-
-}
-#signin{
-    position: absolute;
-    width: 80px;
-    height: 30px;
-    margin-top: 13px;
-    margin-left: -30px;
-    border-radius: 35px;
-    background-color: white;
-    border-color: lightgrey;
-    border-width: 0.1px;
-}
-p{
-    color: #4169e1;
-    font-weight: bolder;
-    margin-top: 4px;
-    margin-left:20px;
+.youtube-logo img {
+  width: 90px;
+  margin-left: 1rem;
 }
 
-.person{
-    position: absolute;
-    width:20px;
-    height:20px;
-    margin-top:5px;
-    margin-left:-35px;
-    cursor: pointer;
-    
-}
-.video{
-    position: absolute;
-    margin-top:100px;
-    width: 800px;
-    height:450px;
-    margin-left:100px;
-    border-radius: 10px;
-    
+.search-input {
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-left: 1px solid gray;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+  padding: 10px;
+  width: 30rem;
 }
 
-.videotitle{
-    position: absolute;
-    margin-top:560px;
-    margin-left:100px;
-    
+.search-button {
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border: 1px solid gray;
+  width: 4rem;
 }
 
-.spongebobface{
-    position: absolute;
-    width: 35px;
-    height: 35px;
-    margin-top:600px;
-    margin-left:110px;
-}
-.Accountname{
-    position: absolute;
-    margin-top: 600px;
-    margin-left: 170px;
-}
-.subscriberamount{
-    position: absolute;
-    margin-top: 624px;
-    margin-left:170px;
-    color:grey;
-    font-size: 11px;
-    font-weight: lighter;
-    font-family:Arial, Helvetica, sans-serif;
+.search-button img {
+  width: 40px;
+  height: 40px;
 }
 
-
-/*forphone*/
-@media only screen and (max-width:600px){
-    .video{
-        position: absolute;
-        width: 345px;
-        height:200px;
-        margin-left:-3px;
-        
-    }
-    .videotitle{
-        position: absolute;
-        font-size:10px;
-        margin-top: 310px;
-        margin-left:10px;
-        
-    }
-    .Accountname{
-        position:absolute;
-        font-size: 8px;
-        margin-top:340px;
-        margin-left:50px;
-    }
-    .spongebobface{
-        position: absolute;
-        width:30px;
-        height:30px;
-        margin-top: 340px;
-        margin-left:12px;
-    }
-    .subscriberamount{
-        position: absolute;
-        font-size: 6px;
-        margin-top:350px;
-        margin-left:50px;
-    }
-    .hamburger{
-        width:13px;
-        height:13px;
-    }
-    .youtubelogo{
-        width:30px;
-        height:20px;
-        margin-top:17px;
-        
-    }
-    
-    
+.settings-logo img {
+  width: 40px;
+  height: 40px;
 }
-    
-/* For Ipad*/
-@media only screen and (min-width:768px){
-    .video{
-        width:700px;
-        height:400px;
-        margin-left: 50px;
-    }
-    .videotitle{
-        font-size: 15px;
-        margin-left:55px;
-    }
-    .Accountname{
-        font-size: 12px;
-        margin-left:110px;
-    }
-    .spongebobface{
-        margin-left:55px;
-    }
-    .subscriberamount{
-        margin-left:120px;
-    }
-    
-    
+
+.signin-button img {
+  width: 40px;
+  height: 40px;
+}
+
+.signin-button p {
+  margin-left: 10px;
+}
+
+.microphone {
+  border-radius: 50%;
+  width: 1.5rem;
+  height: 1.5rem;
+  padding: 0.5rem;
+  margin-left: 1rem;
+}
+
+.microphone:hover {
+  background: rgb(216, 215, 215);
+  cursor: pointer;
+}
+
+.microphone img {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.video iframe {
+  width: 70vw;
+  height: 40vw;
+}
+
+.account-img img {
+  width: 3rem;
+  border-radius: 50%;
+}
+
+.account-details {
+  margin: 1rem;
+}
+
+.video-details-container {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.video-details-container h2 {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-start {
+  justify-content: start;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
