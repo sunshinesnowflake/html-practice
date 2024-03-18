@@ -181,6 +181,13 @@ body {
   margin-left: 10px;
 }
 
+.signin-button{
+  border-top-left-radius: 20px;
+  border-bottom-left-radius:20px;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
 .microphone {
   border-radius: 50%;
   width: 1.5rem;
