@@ -181,6 +181,11 @@ body {
   margin-left: 10px;
 }
 
+.signin-button{
+  border-radius: 20px;
+  background-color: #FFFFFF;
+}
+
 .microphone {
   border-radius: 50%;
   width: 1.5rem;
