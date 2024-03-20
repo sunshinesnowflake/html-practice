@@ -184,6 +184,8 @@ body {
 .signin-button{
   border-radius: 20px;
   background-color: #FFFFFF;
+  color:#525299;
+  font-weight: bold;
 }
 
 .microphone {
